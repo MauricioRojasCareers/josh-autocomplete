@@ -8,6 +8,7 @@ const Page = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
   const origin = searchParams.get("origin");
+  console.log(origin, "logging origin...");
 
   trpc.authCallback.useQuery(undefined, {
     onSuccess: ({ success }) => {
