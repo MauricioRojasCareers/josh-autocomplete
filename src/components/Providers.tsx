@@ -11,7 +11,7 @@ const Providers = ({ children }: PropsWithChildren) => {
     trpc.createClient({
       links: [
         httpBatchLink({
-          url: "https://josh-autocomplete.vercel.app/",
+          url: "https://josh-autocomplete.vercel.app/api/trpc",
         }),
       ],
     })
